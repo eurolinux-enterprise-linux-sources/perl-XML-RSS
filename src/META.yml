@@ -1,0 +1,57 @@
+---
+name: XML-RSS
+version: 1.45
+author:
+  - 'Shlomi Fish <shlomif@cpan.org>'
+abstract: creates and updates RSS files
+license: perl
+resources:
+  homepage: http://perl-rss.sourceforge.net/
+  license: http://dev.perl.org/licenses/
+  repository: https://svn.perl.org/modules/XML-RSS/trunk
+build_requires:
+  Test::Manifest: 0.9
+  Test::More: 0
+requires:
+  DateTime: 0
+  DateTime::Format::Mail: 0
+  DateTime::Format::W3CDTF: 0
+  HTML::Entities: 0
+  XML::Parser: 2.23
+  perl: 5.006
+configure_requires:
+  Module::Build: 0.34
+provides:
+  XML::RSS:
+    file: lib/XML/RSS.pm
+    version: 1.45
+  XML::RSS::Private::Output::Base:
+    file: lib/XML/RSS/Private/Output/Base.pm
+  XML::RSS::Private::Output::Roles::ImageDims:
+    file: lib/XML/RSS/Private/Output/Roles/ImageDims.pm
+  XML::RSS::Private::Output::Roles::ModulesElems:
+    file: lib/XML/RSS/Private/Output/Roles/ModulesElems.pm
+  XML::RSS::Private::Output::V0_9:
+    file: lib/XML/RSS/Private/Output/V0_9.pm
+  XML::RSS::Private::Output::V0_91:
+    file: lib/XML/RSS/Private/Output/V0_91.pm
+  XML::RSS::Private::Output::V1_0:
+    file: lib/XML/RSS/Private/Output/V1_0.pm
+  XML::RSS::Private::Output::V2_0:
+    file: lib/XML/RSS/Private/Output/V2_0.pm
+generated_by: Module::Build version 0.34
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+keywords:
+  - feed
+  - feeds
+  - generate
+  - generating
+  - parse
+  - parsing
+  - rss
+  - RSS
+  - web-feed
+  - web-feeds
+  - xml
